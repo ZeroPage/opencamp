@@ -1,0 +1,66 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono|Josefin+Sans:700);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+body {
+	margin : 0px;
+	padding : 0px;
+
+	font-family: "Nanum Gothic", sans-serif;
+}
+header {
+	position : fixed;
+	background : #9dca73;
+	width : 100%;
+	margin : 0px;
+	padding: 0px 10px;
+	top : 0px;
+	z-index : 100;
+}
+header h1 {
+	font-family: 'Josefin Sans', sans-serif;
+	display : inline-block;
+	margin : 0px;
+}
+header ul {
+	margin : 0px;
+	padding : 0px;
+	display : inline-block;
+}
+header ul li{
+	font-family: 'Ubuntu Mono', sans-serif;
+	display : inline-block;
+	padding : 3px 5px;
+	margin : 0px;
+}
+header li a {
+	color : #ffffff;
+	text-decoration : none;
+}
+header li a.active,
+header li a:hover {
+	color : #106710;
+}
+body>section {
+	padding-top : 50px;
+}
+
+h1, h2, h3 {
+	font-family: 'Josefin Sans', sans-serif;
+}
+.anchor:before {
+	display: block;
+	content: "";
+	height: 50px;
+	margin: -50px 0 0;
+}
+footer {
+	font-size : 0.8em;
+	text-align : center;
+	max-width : 560px;
+	margin : 20px auto;
+	padding : 0px 20px;
+	color : gray;
+}
+.clear {
+	clear : both;
+}

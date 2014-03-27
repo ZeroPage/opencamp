@@ -1,0 +1,193 @@
+header>div {
+	max-width : 1000px;
+	margin : auto;
+}
+.main section {
+	max-width: 1000px;
+	min-width: 600px;
+	padding : 0px 10px;
+	margin : auto;
+}
+h2 {
+	padding-left : 10px;
+	border-bottom : 3px solid #9dca73;
+	clear : both;
+}
+
+#Intro {
+	background : url(../images/slide-1.jpg) black;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size : cover;
+
+	max-width: 9999px; /*cancel max-width*/
+	padding : 0px 0px; /*cancel padding*/
+}
+#Intro h1 {
+	font-size : 3em;
+	margin : 0px;
+	margin-bottom : 10px;
+}
+#Intro p {
+	font-size : 1.2em;
+	margin : 5px;
+}
+#Intro .contents {
+	text-align : right;
+	text-shadow: 1px 1px 1px #000;
+	color : white;
+	position : fixed;
+	top : 50%;
+	left : 50%;
+	padding : 50px 20px;
+	border-radius : 20px;
+	background : rgba(20,20,20,0.6);
+	background : radial-gradient(ellipse at center, rgba(0,0,0,0.6) 0%,rgba(229,229,229,0.0) 80%); 
+}
+#About .wapper{
+	margin-left : 410px;
+}
+#About h2 {
+	width : 400px;
+	height : 100px;
+	line-height : 48px;
+	font-size : 50px;
+	border-radius : 200px;
+	text-align : center;
+	background : green;
+	padding :  150px 0px;
+	float : left;
+
+	margin-right : 10px;
+	
+	border-bottom : none;/*cancel underline*/
+	box-shadow : 3px 3px 1px 1px #9dca73;
+}
+#About p.description{
+	vertical-align: middle;
+}
+#About dt {
+	font-weight : bold;
+	margin-top : 0.5em;
+}
+#About dd {
+	margin-left : 1em;
+}
+#Location {
+	clear : both;
+}
+#Location dt {
+	font-weight : bold;
+}
+
+#map {
+	text-align : center;
+	float : left;
+	max-width : 60%;
+}
+#map img {
+	display: block;
+	margin : auto;
+	border : 1px solid gray;
+	border-radius : 5px;
+	max-width: 90%;
+}
+#map a {
+	display : inline-block;
+	color : white;
+	padding : 5px;
+	background : #9dca73;
+	border-radius : 5px; 
+	margin : 10px;
+	text-decoration : none;
+	box-shadow : 1px 2px 0px 1px #999;
+	font-weight : bold;
+}
+#map a:hover {
+	color : green;
+}
+#subway ul,
+#bus ul {
+	display : inline-block;
+	padding : 0px;
+	list-style : none;
+	margin: 0px;
+}
+#subway li,
+#bus li {
+	margin : 10px 0px;
+	padding : 0px;
+}
+#subway span,
+#bus span {
+	margin-right : 10px;
+	padding : 2px;
+	border : 1px solid gray;
+	border-radius : 4px;
+	font-size : 0.8em;
+	font-weight: bold;
+}
+#subway .line-7 {
+	color : white;
+	background : #596501;
+}
+#subway .line-9 {
+	color : white;
+	background : #BA9A1B;
+}
+#bus .blue-label {
+	color : white;
+	background : #173E9F;
+}
+#bus .green-label {
+	color : white;
+	background : #48922D;
+}
+#Register {
+	clear : both;
+}
+#Register form {
+	margin : 50px;
+	width : 90%;
+	max-width : 800px;
+	margin : auto;
+}
+#Register fieldset {
+	margin : 30px 0px;
+}
+#Register fieldset input,
+#Register fieldset label {
+	vertical-align : middle;
+}
+#Register textarea {
+	width : 100%;
+	box-sizing : border-box;
+	height : 200px;
+	resize : vertical;
+}
+
+#Schedule table {
+	width : 90%;
+	max-width : 800px;
+	border-spacing : 10px;
+	margin : auto;
+}
+#Schedule th,
+#Schedule td {
+	text-align : center;
+	padding : 10px;
+}
+#Schedule td:first-child {
+	background : #106710;
+	color : white;
+	border-radius : 5px;
+}
+#Schedule td:last-child {
+	border-bottom : 1px solid #48922D;
+}
+#Schedule td.middle {
+	background : #DBEBCC;
+	color : #106710;
+	border : none;
+}

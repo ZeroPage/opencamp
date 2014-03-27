@@ -1,0 +1,159 @@
+h2 {
+	padding-left : 10px;
+	border-bottom : 3px solid #9dca73;
+}
+.main section {
+	padding : 0px 10px;
+}
+
+#Intro {
+	background : url(../images/slide-1.jpg) black;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height : 500px;
+
+	background-size : 320px; /* iPhone */
+	background-size : cover;
+	padding : 0px 0px; /*cancel entire padding*/
+}
+#Intro .anchor {
+	margin-bottom : 200px;
+	display : inline-block;
+}
+#Intro h1 {
+	font-size : 2em;
+}
+#Intro .contents {
+	text-align : right;
+	padding : 0px 20px;
+	background : rgba(150, 150, 150, 0.3);
+	text-shadow : 1px 1px 3px #fff;
+	padding : 10px;
+}
+#About h2 {
+	width : 200px;
+	height : 60px;
+	line-height : 28px;
+	font-size : 30px;
+	border-radius : 100px;
+	text-align : center;
+	background : green;
+	padding :  70px 0px;
+	float : left;
+
+	margin-right : 10px;
+	
+	border-bottom : none;/*cancel underline*/
+	box-shadow : 3px 3px 1px 1px #9dca73;
+}
+#About p.description{
+	min-height: 200px;
+	vertical-align: middle;
+}
+#About h3 {
+	clear : both;
+}
+
+#About dl {
+	padding-left : 20px;
+}
+#About dt {
+	font-weight : bold;
+	margin-top : 0.5em;
+}
+#About dd {
+	margin-left : 1em;
+}
+#Location dt {
+	font-weight : bold;
+}
+
+#map {
+	text-align : center;
+}
+#map img {
+	display: block;
+	margin : auto;
+	border : 1px solid gray;
+	border-radius : 5px;
+	max-width: 90%;
+}
+#map a {
+	display : inline-block;
+	color : white;
+	padding : 5px;
+	background : #9dca73;
+	border-radius : 5px; 
+	margin : 10px;
+	text-decoration : none;
+	box-shadow : 1px 2px 0px 1px #999;
+	font-weight : bold;
+}
+#map a:hover {
+	color : green;
+}
+#subway ul,
+#bus ul {
+	display : inline-block;
+	padding : 0px;
+	list-style : none;
+	margin: 0px;
+}
+#subway li,
+#bus li {
+	margin : 10px 0px;
+	padding : 0px;
+}
+#subway span,
+#bus span {
+	margin-right : 10px;
+	padding : 2px;
+	border : 1px solid gray;
+	border-radius : 4px;
+	font-size : 0.8em;
+	font-weight: bold;
+}
+#subway .line-7 {
+	color : white;
+	background : #596501;
+}
+#subway .line-9 {
+	color : white;
+	background : #BA9A1B;
+}
+#bus .blue-label {
+	color : white;
+	background : #173E9F;
+}
+#bus .green-label {
+	color : white;
+	background : #48922D;
+}
+#Register {
+	clear : both;
+}
+
+#Schedule table {
+	width : 100%;
+	border-spacing : 10px;
+	margin : auto;
+}
+#Schedule th,
+#Schedule td {
+	text-align : center;
+	padding : 10px;
+}
+#Schedule td:first-child {
+	background : #106710;
+	color : white;
+	border-radius : 5px;
+}
+#Schedule td:last-child {
+	border-bottom : 1px solid #48922D;
+}
+#Schedule td.middle {
+	background : #DBEBCC;
+	color : #106710;
+	border : none;
+}

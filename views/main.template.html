@@ -1,0 +1,197 @@
+{{define "head"}}
+{{if eq .Mode "pc"}}
+<style>@import url("/public/stylesheets/pc.css");</style>
+{{else if eq .Mode "mobile"}}
+<style>@import url("/public/stylesheets/mobile.css");</style>
+{{end}}
+{{end}}
+{{define "contents"}}
+<article class="main">
+	<section id="Intro"
+		{{if eq .Mode "pc"}}
+		data-top="background-position-y:0px;"
+		data-top-bottom="background-position-y:-150px;"
+		{{end}}
+	>
+		<a name="Intro" class="anchor"> </a>
+		<div class="contents"
+			{{if eq .Mode "pc"}}
+			data-top-top="opacity:1;display:!block"
+			data-5p-bottom="opacity:0"
+			data-100-top-bottom="display:!none"
+			data-anchor-target="#Intro"
+			{{end}}
+		>
+			<h1>Open Camp</h1>
+			<p>2014년 4월 26일</p>
+			<p>여러분이 경험하지 못했던 해커톤이 다가옴니다.</p>
+		</div>
+	</section>
+	<section id="About">
+		<a name="About" class="anchor"></a>
+			<h2 
+				{{if eq .Mode "pc"}}
+				data-bottom-top="opacity:0"
+				data-200-top-top="opacity:1"
+				{{end}}
+			>What is OpenCamp</h2>
+		<div class="wapper">
+			<p class="description">
+			오픈캠프는 다양한 사람들과 어울리는 자리이며 일반적이 해커톤과는 조금 다름니다.
+			오픈캠프는 다양한 사람들과 어울리는 자리이며 일반적이 해커톤과는 조금 다름니다. 
+			오픈캠프는 다양한 사람들과 어울리는 자리이며 일반적이 해커톤과는 조금 다름니다.
+			오픈캠프는 다양한 사람들과 어울리는 자리이며 일반적이 해커톤과는 조금 다름니다.
+			</p>
+			<h3>해커톤을 하고 나서 당신이 얻는 것</h3>
+			<ul>
+				<li>맨날 보던 사람이 아니라 처음 만난 사람과 밤샘 코딩을 하면서 서로 친해진다.</li>
+				<li>해커톤의 결과물을 중요시하기 보다는 만들어가는 과정에서 서로 즐거운 시간을 가졌으면 좋겠다.</li>
+				<li>단발성 행사가 아니라 해커톤을 통해 알게 된 사람들과 지속적인 교류를 할 수 있도록 만들어보자.</li>
+			</ul>
+			<dl>
+				<dt>일시</dt>
+				<dd>2014.4.26 13:00 ~ 27 12:00</dd>
+				<dt>상품</dt>
+				<dd>킨들 파이어, 크롬 캐스트, 포토, 외장하드</dd>
+				<dt>준비물</dt>
+				<dd>열정과 아이디어 그리고 당신</dd>
+				<dt>주제</dt>
+				<dd>꿈, 연결, 일탈 그리고 닭</dd>
+			</dl>
+		</div>
+	</section>
+	<section id="Location">
+		<a name="Location" class="anchor"> 
+			<h2>Location</h2>
+		</a>
+		<div id="map">
+			<p>동작구 흑석동 중앙대학교 208관 601호(제 2공학관 6층)</p>
+			<img src="http://prt.map.naver.com/mashupmap/print?key=p1395110508855_-1341496068" alt="지도 크게 보기" title="지도 크게 보기" border="0">
+			<a href="http://map.naver.com/?dlevel=12&pinType=site&pinId=19029763&x=126.9570857&y=37.5036786&enc=b64">지도 크게 보기</a>
+		</div>
+		<h3>주변 대중교통</h3>
+		<dl>
+			<dt>지하철</dt>
+			<dd id="subway">
+			<ul>
+				<li><span class="line-7">7호선</span> 상도역 5번출구</li>
+				<li><span class="line-9">9호선</span> 흑석역 3, 4번 출구</li>
+			</ul>
+			</dd>
+			<dt>버스</dt>
+			<dd id="bus">
+			<ul>
+				<li><span class="blue-label">간선</span> 151, 501, 506, 750A, 750B</li>
+				<li><span class="green-label">마을</span> 동작 1, 동작 10, 동작 21</li>
+				<li><span class="green-label">지선</span> 5511, 5517, 5524</li>
+			</ul>
+			</dd>
+		</dl>
+	</section>
+	<section id="Register">
+		<a name="Register" class="anchor">
+			<h2>Register</h2>
+		</a>
+		<form method="POST" action="/register">
+			<dl>
+				<dt><label for="name">Name</label></dt>
+				<dd><input name="name" type="text"/></dd>
+				<dt><label for="email">E-Mail</label></dt>
+				<dd><input name="email" type="email"/></dd>
+				<dt><label for="phone">phone</label></dt>
+				<dd><input name="phone" type="text"/></dd>
+			</dl>
+			<dl>
+				<dt><label for="partner-name">Name</label></dt>
+				<dd><input name="partner-name" type="text"/></dd>
+				<dt><label for="partner-email">E-Mail</label></dt>
+				<dd><input name="partner-email" type="email"/></dd>
+				<dt><label for="partner-phone">phone</label></dt>
+				<dd><input name="partner-phone" type="text"/></dd>
+			</dl>
+
+			<fieldset>
+				<legend>Tech</legend>
+				<input name="tech" type="checkbox" value="design"/><label><b>Design</b></label>
+				<input name="tech" type="checkbox" value="nodejs"/><label>Nodejs</label>
+				<input name="tech" type="checkbox" value="android"/><label>Android</label>
+				<input name="tech" type="checkbox" value="java"/><label>Java</label>
+				<input name="tech" type="checkbox" value="iPhone"/><label>iPhone</label>
+				<input name="tech" type="checkbox" value="other"/><label>Other</label>
+			</fieldset>
+			<fieldset>
+				<legend>팀 소개</legend>
+				<textarea></textarea>
+			</fieldset>
+			<fieldset>
+				<legend>만들고 싶은것</legend>
+				<textarea></textarea>
+			</fieldset>
+			<fieldset>
+				<legend>자신의 능력 어필</legend>
+				<textarea></textarea>
+			</fieldset>
+			<button type="submit">Register</button>
+		</form>
+	</section>
+	<section id="Schedule">
+		<a name="Schedule" class="anchor">
+			<h2>Schedule</h2>
+		</a>
+		<table>
+			<thead>
+				<tr>
+					<th>시간</th><th>내용</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>13:00 ~ 13:30</td>
+					<td>Greeting</td>
+				</tr><tr>
+					<td>13:30 ~ 15:00</td>
+					<td>Ice Breaking, 팀 빌딩</td>
+				</tr><tr>
+					<td>15:00 ~ 17:30</td>
+					<td>Running!</td>
+				</tr><tr>
+					<td colspan="2" class="middle">Dinner Time</td>
+					<!--
+					<td>17:30 ~ 18:30</td>
+					<td>저녁식사</td>-->
+				</tr><tr>
+					<td>18:30 ~ 23:30</td>
+					<td>Running</td>
+				</tr><tr>
+					<td>23:30 ~ 24:30</td>
+					<td>페차쿠차 팀 중간 발표</td>
+				</tr><tr>
+					<td>24:30 ~ 08:00</td>
+					<td>Running with Chicken</td>
+				</tr><tr>
+					<td colspan="2" class="middle">Breakfast</td>
+					<!--<td>08:00 ~ 09:00</td>
+					<td>아침 식사</td>-->
+				</tr><tr>
+					<td>09:00 ~ 10:00</td>
+					<td>마무리</td>
+				</tr><tr>
+					<td>10:00 ~ 11:30</td>
+					<td>발표</td>
+				</tr><tr>
+					<td>11:30 ~ 11:50</td>
+					<td>회고</td>
+				</tr><tr>
+					<td>11:50 ~ 12:00 </td>
+					<td>시상</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<script src="/public/javascripts/skrollr.js"></script>
+	{{if eq .Mode "pc"}}
+	<script src="/public/javascripts/main.js"></script>
+	{{end}}
+	<script src="/public/javascripts/scrollspy.js"></script>
+</article>
+{{end}}
