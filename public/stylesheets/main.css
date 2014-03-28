@@ -64,3 +64,17 @@ footer {
 .clear {
 	clear : both;
 }
+.btn {
+	display : inline-block;
+	color : white;
+	padding : 5px;
+	background : #9dca73;
+	border-radius : 5px; 
+	margin : 10px;
+	text-decoration : none;
+	box-shadow : 1px 2px 0px 1px #999;
+	font-weight : bold;
+}
+.btn:hover {
+	color : green;
+}

@@ -17,7 +17,6 @@ type RenderData struct{
 
 func init() {
 	http.HandleFunc("/", handler)
-	http.HandleFunc("/register", register)
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
@@ -89,6 +88,4 @@ func register(w http.ResponseWriter, req *http.Request){
 }
 func getDataStoreKey(context appengine.Context) *datastore.Key {
 	return datastore.NewKey(context, "opencamp", "third", 0, nil);
-}
-func sendConfirmMail(email string){
 }
