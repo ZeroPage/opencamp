@@ -104,10 +104,13 @@ footer {
 	vertical-align : top;
 }
 #Organizers img {
-	width : 48px;
-	height : 48px;
+	width : 64px;
+	height : 64px;
 	border-radius :5px;
 	border : 1px solid gray;
 	vertical-align : bottom;
 }
-
+#Organizers td span {
+	font-weight : bold;
+	display : block;
+}
