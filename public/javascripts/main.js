@@ -1,7 +1,7 @@
 var height = viewport().height;
 
 var $intro = document.getElementById("Intro");
-$intro.style.height = (height * 2) + "px";
+$intro.style.height = (height + 700) + "px";
 
 var s = skrollr.init();
 

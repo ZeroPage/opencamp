@@ -78,3 +78,36 @@ footer {
 .btn:hover {
 	color : green;
 }
+
+#Organizers table {
+	margin : 0px;
+	padding : 0px;
+	list-style : none;
+
+	width : 90%;
+	max-width : 800px;
+
+	margin : auto;
+
+	border-collapse : collapse;
+}
+
+#Organizers td {
+	padding-top : 20px;
+	padding-bottom : 5px;
+	vertical-align : bottom;
+	border-bottom : 1px solid gray;
+}
+#Organizers td:first-child {
+	width : 50px;
+	padding-right : 20px;
+	vertical-align : top;
+}
+#Organizers img {
+	width : 48px;
+	height : 48px;
+	border-radius :5px;
+	border : 1px solid gray;
+	vertical-align : bottom;
+}
+

@@ -157,3 +157,7 @@ h2 {
 	color : #106710;
 	border : none;
 }
+#Organizers table {
+	width : 100%;
+	max-width : auto;
+}
