@@ -47,6 +47,11 @@ body>section {
 h1, h2, h3 {
 	font-family: 'Josefin Sans', sans-serif;
 }
+h2 {
+	padding-left : 10px;
+	border-bottom : 3px solid #9dca73;
+	clear : both;
+}
 .anchor:before {
 	display: block;
 	content: "";
@@ -66,7 +71,7 @@ footer {
 }
 .btn {
 	display : inline-block;
-	color : white;
+	color : green;
 	padding : 5px;
 	background : #9dca73;
 	border-radius : 5px; 
@@ -76,17 +81,98 @@ footer {
 	font-weight : bold;
 }
 .btn:hover {
-	color : green;
+	color : white;
+}
+
+#About dt {
+	font-weight : bold;
+	margin-top : 0.5em;
+}
+#About dd {
+	margin-left : 1em;
+}
+
+#Location {
+	clear : both;
+}
+#Location dt {
+	font-weight : bold;
+}
+#map {
+	text-align : center;
+}
+#map img {
+	display: block;
+	margin : auto;
+	border : 1px solid gray;
+	border-radius : 5px;
+	max-width: 90%;
+}
+#subway ul,
+#bus ul {
+	display : inline-block;
+	padding : 0px;
+	list-style : none;
+	margin: 0px;
+}
+#subway li,
+#bus li {
+	margin : 10px 0px;
+	padding : 0px;
+}
+#subway span,
+#bus span {
+	margin-right : 10px;
+	padding : 2px;
+	border : 1px solid gray;
+	border-radius : 4px;
+	font-size : 0.8em;
+	font-weight: bold;
+}
+#subway .line-7 {
+	color : white;
+	background : #596501;
+}
+#subway .line-9 {
+	color : white;
+	background : #BA9A1B;
+}
+#bus .blue-label {
+	color : white;
+	background : #173E9F;
+}
+#bus .green-label {
+	color : white;
+	background : #48922D;
+}
+
+#Register {
+	clear : both;
+}
+
+#Schedule th,
+#Schedule td {
+	text-align : center;
+	padding : 10px;
+}
+#Schedule td:first-child {
+	background : #106710;
+	color : white;
+	border-radius : 5px;
+}
+#Schedule td:last-child {
+	border-bottom : 1px solid #48922D;
+}
+#Schedule td.middle {
+	background : #DBEBCC;
+	color : #106710;
+	border : none;
 }
 
 #Organizers table {
 	margin : 0px;
 	padding : 0px;
 	list-style : none;
-
-	width : 90%;
-	max-width : 800px;
-
 	margin : auto;
 
 	border-collapse : collapse;
