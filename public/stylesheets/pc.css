@@ -62,14 +62,12 @@ header ul li {
 	font-size : 50px;
 	border-radius : 200px;
 	text-align : center;
-	background : green;
 	padding :  150px 0px;
 	float : left;
 
 	margin-right : 10px;
 	
 	border-bottom : none;/*cancel underline*/
-	box-shadow : 3px 3px 1px 1px #9dca73;
 }
 #About p.description{
 	vertical-align: middle;

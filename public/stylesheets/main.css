@@ -4,13 +4,17 @@
 body {
 	margin : 0px;
 	padding : 0px;
-	line-height : 1.5em;
 
 	font-family: "Nanum Gothic", sans-serif;
+	
+	background : #E0F0F9;
+}
+p, li {
+	line-height : 1.5em;
 }
 header {
 	position : fixed;
-	background : #9dca73;
+	background : #00ADDE;
 	width : 100%;
 	margin : 0px;
 	padding: 0px 10px;
@@ -40,7 +44,7 @@ header li a {
 }
 header li a.active,
 header li a:hover {
-	color : #106710;
+	color : #006F99;
 }
 body>section {
 	padding-top : 50px;
@@ -51,7 +55,7 @@ h1, h2, h3 {
 }
 h2 {
 	padding-left : 10px;
-	border-bottom : 3px solid #9dca73;
+	border-bottom : 3px solid #00ADDE;
 	clear : both;
 }
 .anchor:before {
@@ -73,9 +77,9 @@ footer {
 }
 .btn {
 	display : inline-block;
-	color : green;
+	color : #006F99;
 	padding : 5px;
-	background : #9dca73;
+	background : #72BFEC;
 	border-radius : 5px; 
 	margin : 10px;
 	text-decoration : none;
@@ -84,6 +88,12 @@ footer {
 }
 .btn:hover {
 	color : white;
+}
+
+#About h2 {
+	color : #E0F0F9;
+	background : #006F99;
+	box-shadow : 3px 3px 1px 1px #72BFEC;
 }
 
 #About dt {
@@ -113,7 +123,7 @@ footer {
 }
 #map span {
 	font-size : 1.3em;
-	color : green;
+	color : #006F99;
 }
 #map a {
 	text-decoration : none;
@@ -189,16 +199,16 @@ footer {
 	padding : 10px;
 }
 #Schedule td:first-child {
-	background : #106710;
+	background : #006F99;
 	color : white;
 	border-radius : 5px;
 }
 #Schedule td:last-child {
-	border-bottom : 1px solid #48922D;
+	border-bottom : 1px solid #00ADDE;
 }
 #Schedule td.middle {
-	background : #DBEBCC;
-	color : #106710;
+	background : #72BFEC;
+	color : #006F99;
 	border : none;
 }
 
@@ -215,7 +225,7 @@ footer {
 	padding-top : 20px;
 	padding-bottom : 5px;
 	vertical-align : bottom;
-	border-bottom : 1px solid gray;
+	border-bottom : 1px solid #006F99;
 }
 #Organizers td:first-child {
 	width : 50px;
