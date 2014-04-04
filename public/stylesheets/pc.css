@@ -8,6 +8,12 @@ header>div {
 	padding : 0px 10px;
 	margin : auto;
 }
+header h1 {
+	font-size : 3em;
+}
+header ul li {
+	font-size : 1.3em;
+}
 
 #Intro {
 	background : url(../images/slide-1.jpg) black;
@@ -22,11 +28,17 @@ header>div {
 #Intro h1 {
 	font-size : 3em;
 	margin : 0px;
-	margin-bottom : 10px;
+	margin-bottom : 40px;
 }
 #Intro p {
 	font-size : 1.2em;
 	margin : 5px;
+	
+}
+@media (max-width:900px) {
+	#Intro p {
+		font-size : 1em;
+	}
 }
 #Intro .contents {
 	text-align : right;
@@ -41,7 +53,7 @@ header>div {
 	background : radial-gradient(ellipse at center, rgba(0,0,0,0.6) 0%,rgba(229,229,229,0.0) 80%); 
 }
 #About .wapper{
-	margin-left : 410px;
+	margin-left : 460px;
 }
 #About h2 {
 	width : 400px;
@@ -66,6 +78,19 @@ header>div {
 #map {
 	float : left;
 	max-width : 60%;
+}
+#Register p {
+	width : 90%;
+	max-width : 800px;
+	border-spacing : 10px;
+	margin : auto;
+}
+#Register img{
+	float : left;
+	margin : 0px 70px;
+}
+#Register a.btn {
+	margin-left : 440px;
 }
 
 #Schedule table {

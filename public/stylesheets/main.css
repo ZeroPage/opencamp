@@ -4,6 +4,7 @@
 body {
 	margin : 0px;
 	padding : 0px;
+	line-height : 1.5em;
 
 	font-family: "Nanum Gothic", sans-serif;
 }
@@ -31,6 +32,7 @@ header ul li{
 	display : inline-block;
 	padding : 3px 5px;
 	margin : 0px;
+	
 }
 header li a {
 	color : #ffffff;
@@ -107,6 +109,22 @@ footer {
 	border : 1px solid gray;
 	border-radius : 5px;
 	max-width: 90%;
+	margin-bottom : 10px;
+}
+#map span {
+	font-size : 1.3em;
+	color : green;
+}
+#map a {
+	text-decoration : none;
+}
+#map a img {
+	border : none;
+	display : inline;
+	width : 48px;
+	height : 48px;
+	vertical-align : middle;
+	margin : 0px;
 }
 #subway ul,
 #bus ul {
@@ -148,6 +166,21 @@ footer {
 
 #Register {
 	clear : both;
+}
+
+#Register p {
+	text-indent : 1em;
+}
+
+#Register a.btn{
+	display : block;
+	font-size : 48px;
+	line-height : 100px;
+	width : 350px;
+	height : 100px;
+	border-radius : 20px;
+	text-align : center;
+	margin-top : 50px;
 }
 
 #Schedule th,

@@ -54,6 +54,15 @@
 #About dl {
 	padding-left : 20px;
 }
+#map a img {
+	width : 32px;
+	height : 32px;
+}
+#Register a.btn{
+	width : 250px;
+	font-size : 36px;
+	margin : auto;
+}
 
 #Schedule table {
 	width : 100%;
