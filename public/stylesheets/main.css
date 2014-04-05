@@ -9,7 +9,7 @@ body {
 	
 	background : #E0F0F9;
 }
-p, li {
+p, li, td{
 	line-height : 1.5em;
 }
 header {
@@ -95,6 +95,21 @@ footer {
 	background : #006F99;
 	box-shadow : 3px 3px 1px 1px #72BFEC;
 }
+#About .description .highlight {
+	font-size : 1.7em;
+}
+#About .highlight {
+	font-weight : bold;
+	color : #F0AC3C;
+}
+#About .description a {
+	color : #006F99;
+	text-decoration : none;
+}
+#About .description a:hover {
+	color : #72BFEC;
+}
+
 
 #About dt {
 	font-weight : bold;
@@ -130,6 +145,7 @@ footer {
 }
 #map a img {
 	border : none;
+	border-radius : 10px;
 	display : inline;
 	width : 48px;
 	height : 48px;
